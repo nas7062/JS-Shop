@@ -1,5 +1,7 @@
 import './style.css';
 import CateImg from "../public/image/category.png";
+import userImg from "../public/image/user.png";
+import cartImg from "../public/image/cart.png";
 
 document.querySelector('#app').innerHTML = `
   <header>
@@ -17,9 +19,9 @@ document.querySelector('#app').innerHTML = `
     </div>
     <div class ="topArea">
       <h1>10012</h1>
-      <p class="left"><img /></p>
-      <p class="right">마이페이지</p>
-      <p class="right">장바구니</p>
+      <p class="category"><img /></p>
+      <p class="cart"><img /></p>
+      <p class="mypage"><img /></p>
     </div>
   </header>
 `;
@@ -37,6 +39,12 @@ document.querySelector('#roller2').style.left = document.querySelector('.Rolling
 roller.classList.add('original');
 clone.classList.add('clone');
 
-let category  =document.querySelector('.left');
+let category  =document.querySelector('.category');
 let cateimage = document.createElement('img');
 category.appendChild(cateimage).src =CateImg;
+let myPage = document.querySelector('.mypage');
+let myPageImage = document.createElement('img');
+myPage.appendChild(myPageImage).src =userImg;
+let myCart = document.querySelector('.cart');
+let myCartImage = document.createElement('img');
+myCart.appendChild(myCartImage).src =cartImg;
