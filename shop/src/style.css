@@ -1,5 +1,5 @@
 :root {
-  font-family: "Yeon Sung", serif, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Yeon Sung","Diphylleia", serif, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
   color-scheme: light dark;
@@ -109,7 +109,7 @@ body {
   width: 30px;
   float: right;
   left: 10px;
-  margin :10px 0px;
+  margin :20px 20px;
   cursor: pointer;
 }
 
@@ -117,16 +117,26 @@ body {
   width: 30px;
   float: right;
   left: 10px;
-  margin :10px 0px;
+  margin :20px 20px;
   cursor: pointer;
 }
 #aside-bar {
-  background-color: wheat;
-  width: 400px;
-  height: 80%;
+  background-color: rgba(245, 222, 179, 0.459);
+  width: 250px;
+  height: 70%;
   position: absolute;
   border-radius: 20px;
-  left:-400px;
+  left:-250px;
+  float: left;
+  z-index: 10;
+}
+.nagative {
+  transform : translateX(-250px);
+  transition : transform 0.3s  ease-in-out;
+}
+.active {
+ transform : translateX(250px);
+ transition : transform 0.3s  ease-in-out;
 }
 #aside-bar h2 {
   margin-left: 40px;
@@ -138,4 +148,16 @@ body {
 }
 .cate {
   margin-top: 10px;
+  font-weight: 800;
+}
+.main-img {
+  width: 30%;
+  position: relative;
+  left: 70px;
+  height:576px;
+  box-sizing: border-box;
+}
+#main {
+  width: 100%;
+  
 }
