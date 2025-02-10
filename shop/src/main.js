@@ -65,3 +65,4 @@ document.addEventListener("click", (e) => {
   movingSlider(index);
 });
 setInterval(AutoSlider, 8000);
+

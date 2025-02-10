@@ -204,20 +204,20 @@ a {
   box-sizing: border-box;
 }
 #menu-box {
-  width: 60%;
+  width: 30%;
   display: grid;
   padding: 8px;
   margin :10px auto;
-  gap :4px;
+  gap :8px;
   grid-auto-flow: column;
   grid-template-rows: 1fr 1fr;
   place-items: center;
-  background-color: rgb(63, 25, 25);
+  background-color: rgb(170, 85, 85);
   border-radius: 15px;
 }
 .box {
     width: 100px;
-    padding: 10px 40px;
+    padding: 10px 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -229,5 +229,13 @@ a {
     cursor: pointer;
     border: 1px solid white;
     border-radius: 15px;
-    box-shadow: 2px 2px 8px rgb(236, 160, 160);
+    box-shadow: 2px 5px 8px rgb(220, 150, 150);
+    background-color: rgba(194, 125, 125, 0.589);
+    margin-bottom: 15px;
+    
+}
+.box:hover {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  background-color: rgb(120, 70, 70)
 }
