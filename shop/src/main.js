@@ -66,3 +66,4 @@ document.addEventListener("click", (e) => {
 });
 setInterval(AutoSlider, 8000);
 
+const container = document.getElementsByClassName('.main-container');
