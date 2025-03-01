@@ -42,7 +42,7 @@ const slidesCount = document.querySelectorAll(".slide").length;
 let currentIdx = 1;
 function movingSlider(index) {
   sliderContainer.style.transition = "transform 0.5s ease";
-  sliderContainer.style.transform = `translateX(-${575 * index}px)`;
+  sliderContainer.style.transform = `translateX(-${605 * index}px)`;
   console.log("moving");
 }
 function AutoSlider() {
@@ -51,7 +51,7 @@ function AutoSlider() {
     currentIdx = 0;
   }
   sliderContainer.style.transition = "transform 0.5s ease";
-  sliderContainer.style.transform = `translateX(-${currentIdx * 575}px)`;
+  sliderContainer.style.transform = `translateX(-${currentIdx * 605}px)`;
 }
 document.addEventListener("click", (e) => {
   let index = currentIdx;
@@ -65,5 +65,10 @@ document.addEventListener("click", (e) => {
   movingSlider(index);
 });
 setInterval(AutoSlider, 8000);
+
+const category = document.getElementsByClassName('mypage')[0];
+category.addEventListener("click",()=> {
+  window.location.href = "./src/login.html";
+})
 
 const container = document.getElementsByClassName('.main-container');

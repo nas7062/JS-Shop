@@ -190,7 +190,7 @@ a {
 }
 #slider-items {
   display: flex;
-  width: 30%;
+  width: 31.5%;
 }
 
 .slide {
@@ -265,4 +265,5 @@ a {
 .item-box span {
   display: inline-block;
   width:200px;
+  margin-left: 10px;
 }
