@@ -192,18 +192,17 @@ a {
 }
 #slider-items {
   display: flex;
-  width: 31.5%;
+  width: 100%;
 }
 
 .slide {
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
-  flex: 0 0 100%;
-  width: 100%;
+  width: 33.3333%;  /* 3개의 슬라이드를 균등하게 나누기 위한 설정 (100% / 3) */
   height: 596px;
   box-sizing: border-box;
+  transition: transform 0.5s ease;
 }
 #menu-box {
   width: 60%;
@@ -263,6 +262,7 @@ a {
   width:49%;
   flex-direction: column;
   margin-left: 5px;
+  margin-bottom: 20px;
 }
 .item-box span {
   display: inline-block;
@@ -339,4 +339,37 @@ button:hover {
 #SignM:hover , #loginM:hover {
   color:rgba(37, 37, 236, 0.712);
   cursor: pointer;
+}
+.tagList {
+  display: flex;
+  gap:10px;
+  font-size: 0.8rem;
+  color:white;
+}
+.tagList span:nth-child(odd) {
+  max-width:50px;
+  background-color: rgba(241, 39, 150, 0.66);
+  border-radius: 5px;
+  padding: 2px 4px;
+  text-align: center;
+}
+.tagList span:nth-child(even) {
+  max-width:50px;
+  background-color:rgba(42, 243, 176, 0.76);
+  border-radius: 5px;
+  padding: 2px 4px;
+  text-align: center;
+}
+.ColorList {
+  display: flex;
+  gap:10px;
+  width:20%;
+  border-radius: 15px;
+  background: lightgray;
+}
+.ColorList span{
+  width:20px;
+  height:20px;
+  border-radius: 50%;
+  margin-right: 10px;
 }
